@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Máy tính bỏ túi"
+       android:textColor="#F44336"
+       android:textSize="30sp"
+       android:textStyle="bold"
+       android:textAllCaps="true"/>
+   <EditText
+       android:id="@+id/edit_text_number_1"
+       android:layout_marginTop="10dp"
+       android:drawableStart="@drawable/ic_input_1"
+       android:drawablePadding="5dp"
+       android:digits="0123456789.,"
+       android:inputType="numberDecimal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </EditText>
+   <EditText
+       android:id="@+id/edit_text_number_2"
+       android:layout_marginTop="10dp"
+       android:drawableStart="@drawable/ic_input_1"
+       android:drawablePadding="5dp"
+       android:digits="0123456789.,"
+       android:inputType="numberDecimal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </EditText>
+
+   <TextView
+       android:id="@+id/text_view_result"
+       android:text="Kết quả : 20 x 5 = 100"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:gravity="center"
+       android:textColor="#f00"
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </TextView>
+   <LinearLayout
+       android:layout_marginTop="50dp"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/button_nhan"
+          android:text="X"
+          android:textStyle="bold"
+          android:textSize="30dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+      </Button>
+      <Button
+          android:id="@+id/button_chia"
+          android:layout_marginStart="100dp"
+          android:text=":"
+          android:textStyle="bold"
+          android:textSize="30dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+      </Button>
+   </LinearLayout>
+   <LinearLayout
+       android:layout_marginTop="50dp"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/button_cong"
+          android:text="+"
+          android:textStyle="bold"
+          android:textSize="30dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+      </Button>
+      <Button
+          android:id="@+id/button_tru"
+          android:layout_marginStart="100dp"
+          android:text="-"
+          android:textStyle="bold"
+          android:textSize="30dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+      </Button>
+   </LinearLayout>
+
+</LinearLayout>
